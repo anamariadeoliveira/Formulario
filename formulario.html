@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport content= "width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <title>Cadastro</title>
+    
+    </head>
+</html>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro para vaga de Tecnologia</h1>
+        <p id="subtitulo">Digite suas informações</p>
+        <br>
+    </div>
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</label>
+                <input type="text" name="Nome" id="Nome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+
+        </fieldset>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="Email" required>
+        </div>
+
+        <div class="campo">
+            <label>Você é formado?</label>
+            <label>
+                <input type="radio" name="estudante" value="sim">Sim
+            </label>
+            <label>
+                <input type="radio" name="estudante" value="não">Não
+            </label>
+        </div>
+
+        <div>
+            <label>Você realizou algum destes cursos?</label>
+            <select id="curso">
+                <option selected disabled value="">Selecione...</option>
+                <option>Análise e Desenvolvimento de Sistemas</option>
+                <option>Ciência da Computação</option>
+                <option>Engenharia de Software</option>
+                <option>Outros</option>
+                </select><br><br>
+             </div>
+
+             <fieldset class="grupo">
+                <div id="check">
+                    <label for="Linguagens">Selecione quais Linguagens de Programação você já trabalhou:</label>
+                    <input type="checkbox" id="Java" name="Java" value="Java">
+                    <label for="Java">Java</label>
+                    <input type="checkbox" id="Python" name="Python" value="Python">
+                    <label for="Python">Python</label>
+                    <input type="checkbox" id="C#" name="C#" value="C#">
+                    <label for="C#">C#</label>
+                    <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                    <label for="PHP">PHP</label>
+                 </div>
+             </fieldset>
+             <div>
+                <br>
+                <label>Conte um pouco da sua experiência:</label>
+                <textarea rows="6" style="width: 26em" id="experiência" name="experiência"></textarea>
+             </div><br>
+             <button class="botao" type="submit">Concluído</button>
+    </form>
+
+</body>
